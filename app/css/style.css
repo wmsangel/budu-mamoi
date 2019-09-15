@@ -94,9 +94,10 @@
   text-decoration: none;
   font-size: 16px;
   display: inline-block;
-  padding: 18px 86px;
+  padding: 18px 80px;
   border: none;
-  text-align: center; }
+  text-align: center;
+  outline: none; }
   .btn-yellow {
     background: #fef33b;
     color: #262d32;
@@ -385,7 +386,13 @@ nav ul {
   box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.02);
   border-radius: 30px;
   padding: 60px; }
+  .register-form .thank-you {
+    padding: 86px 40px 46px 40px;
+    font-size: 24px;
+    color: #06cc99;
+    display: none; }
   .register-form form {
+    position: relative;
     padding-top: 40px; }
     .register-form form .form-row {
       display: flex;
@@ -396,6 +403,8 @@ nav ul {
         width: 31%; }
         .register-form form .form-row .form-col label {
           font-size: 14px; }
+          .register-form form .form-row .form-col label.error {
+            color: red; }
         .register-form form .form-row .form-col .btn {
           position: relative;
           z-index: 2; }
@@ -417,11 +426,13 @@ nav ul {
       box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.02);
       border-radius: 28px;
       width: 100%;
-      border: none;
       padding: 21px;
       font-size: 16px;
       color: #8f9ea9;
-      outline: none; }
+      outline: none;
+      border: 1px solid transparent; }
+      .register-form form .form-input.error {
+        border: 1px solid red; }
     .register-form form .form-checkbox {
       vertical-align: middle;
       border-radius: 10px;
@@ -682,6 +693,11 @@ nav ul {
 .section-register-bottom {
   background: url("../images/register-bg-pattern.jpg");
   padding: 80px 0; }
+  .section-register-bottom .thank-you {
+    padding: 86px 40px 46px 40px;
+    font-size: 24px;
+    color: #fff;
+    display: none; }
   .section-register-bottom h2 {
     color: #fff; }
   .section-register-bottom form {
@@ -699,6 +715,8 @@ nav ul {
         .section-register-bottom form .form-row .form-col label {
           font-size: 14px;
           color: #fff; }
+          .section-register-bottom form .form-row .form-col label.error {
+            color: red; }
         .section-register-bottom form .form-row .form-col .btn {
           position: relative;
           z-index: 2; }
@@ -715,11 +733,13 @@ nav ul {
       box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.02);
       border-radius: 28px;
       width: 100%;
-      border: none;
       padding: 21px;
       font-size: 16px;
       color: #8f9ea9;
-      outline: none; }
+      outline: none;
+      border: 1px solid transparent; }
+      .section-register-bottom form .form-input.error {
+        border: 1px solid red; }
     .section-register-bottom form .form-checkbox {
       vertical-align: middle;
       border-radius: 10px;

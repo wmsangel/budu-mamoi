@@ -48,6 +48,11 @@ gulp.task('fonts', function(){
         .pipe(gulp.dest('dist/fonts'))
 })
 
+gulp.task('php', function(){
+    return gulp.src('app/php')
+        .pipe(gulp.dest('dist/php'))
+})
+
 gulp.task('clean:dist', function(){
     return del.sync('dist');
 })
@@ -56,10 +61,10 @@ gulp.task('clean:dist', function(){
 gulp.task('watch', ['browserSync', 'sass'], function(){
     gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
-})
+});
 gulp.task('build', function(callback){
-    runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts'],callback)
-})
+    runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts', 'php'],callback)
+});
 gulp.task('default', function(callback){
     runSequence(['sass', 'browserSync', 'watch'], callback)
-})
+});

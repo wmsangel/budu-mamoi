@@ -392,7 +392,15 @@ nav {
     border-radius: 30px;
     padding: 60px;
 
+    .thank-you {
+        padding: 86px 40px 46px 40px;
+        font-size: 24px;
+        color: $accentColor;
+        display: none;
+    }
+
     form {
+        position: relative;
         padding-top: 40px;
 
         .form-row {
@@ -408,6 +416,10 @@ nav {
 
                 label {
                     font-size: 14px;
+
+                    &.error {
+                        color: red;
+                    }
                 }
 
                 .btn {
@@ -442,11 +454,15 @@ nav {
             box-shadow: 0 0 50px 20px rgba(0, 0, 0, .02);
             border-radius: 28px;
             width: 100%;
-            border: none;
             padding: 21px;
             font-size: 16px;
             color: $lightColor;
             outline: none;
+            border: 1px solid transparent;;
+
+            &.error {
+                border: 1px solid red;
+            }
         }
 
         .form-checkbox {
@@ -796,6 +812,13 @@ nav {
     background: url('../images/register-bg-pattern.jpg');
     padding: 80px 0;
 
+    .thank-you {
+        padding: 86px 40px 46px 40px;
+        font-size: 24px;
+        color: #fff;
+        display: none;
+    }
+
     h2 {
         color: #fff;
     }
@@ -821,6 +844,10 @@ nav {
                 label {
                     font-size: 14px;
                     color: #fff;
+
+                    &.error {
+                        color: red;
+                    }
                 }
 
                 .btn {
@@ -849,11 +876,15 @@ nav {
             box-shadow: 0 0 50px 20px rgba(0, 0, 0, .02);
             border-radius: 28px;
             width: 100%;
-            border: none;
             padding: 21px;
             font-size: 16px;
             color: $lightColor;
             outline: none;
+            border: 1px solid transparent;;
+
+            &.error {
+                border: 1px solid red;
+            }
         }
 
         .form-checkbox {

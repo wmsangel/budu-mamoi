@@ -119,15 +119,16 @@
                 <h2 class="txt-center light">Зарегистрируйся на вебинар до <span class="mediumbold accent-color">21.00 20 сентября</span> и получи чек-лист<br>
                     <span class="mediumbold">"10 способов подружиться с болью в родах"</span></h2>
 
-                <form action="">
+                <div class="thank-you txt-center ">Ваша заявка отправлена.</div>
+                <form class="reg-form">
                     <div class="form-row">
-                        <div class="form-col"><input type="text" placeholder="Ваше имя" class="form-input light"></div>
-                        <div class="form-col"><input type="text" placeholder="Ваш телефон" class="form-input light"></div>
-                        <div class="form-col txt-right"><input type="button" value="Зарегистрироваться" class="btn"></div>
+                        <div class="form-col"><input type="text" name="name" required placeholder="Ваше имя" class="form-input light"></div>
+                        <div class="form-col"><input type="text" name="phone" required placeholder="Ваш телефон" class="form-input light"></div>
+                        <div class="form-col txt-right"><input type="button" value="Зарегистрироваться" class="btn register-form__send"></div>
                     </div>
                     <div class="form-row txt-center full-width">
                         <div class="form-col">
-                            <label for="accept" class="light"><input type="checkbox" name="accept" id="accept" class="form-checkbox"> Вы соглашаетесь на обработку персональных данных</label>
+                            <label for="accept" class="for-accept light"><input type="checkbox" name="accept" id="accept" class="form-checkbox"> Вы соглашаетесь на обработку персональных данных</label>
                         </div>
                     </div>
                 </form>
@@ -206,20 +207,21 @@
             <div class="register-bottom">
                 <h2 class="txt-center light">Зарегистрируйся прямо сейчас, что бы получить<br> <span class="mediumbold">подарок в конце вебинара!</span></h2>
 
-                <form action="">
+                <div class="thank-you txt-center ">Ваша заявка отправлена.</div>
+                <form class="bottom-reg-form">
                     <div class="form-row">
-                        <div class="form-col"><input type="text" placeholder="Ваше имя" class="form-input light"></div>
-                        <div class="form-col"><input type="text" placeholder="Ваш телефон" class="form-input light"></div>
-                        <div class="form-col"><input type="text" placeholder="Ваш email" class="form-input light"></div>
+                        <div class="form-col"><input type="text" name="name" placeholder="Ваше имя" class="form-input light"></div>
+                        <div class="form-col"><input type="text" name="phone" placeholder="Ваш телефон" class="form-input light"></div>
+                        <div class="form-col"><input type="text" name="email" placeholder="Ваш email" class="form-input light"></div>
                     </div>
                     <div class="form-row txt-center full-width">
                         <div class="form-col">
-                            <label for="footer-accept" class="light"><input type="checkbox" name="accept" id="footer-accept" class="form-checkbox"> Вы соглашаетесь на обработку персональных данных</label>
+                            <label for="footer-accept" class="light for-bottom-accept"><input type="checkbox" name="accept" id="footer-accept" class="form-checkbox"> Вы соглашаетесь на обработку персональных данных</label>
                         </div>
                     </div>
                     <div class="form-row txt-center full-width">
                         <div class="form-col txt-center">
-                            <input type="button" value="Зарегистрироваться" class="btn btn-yellow">
+                            <input type="button" value="Зарегистрироваться" class="btn btn-yellow register-form-bottom__send">
                         </div>
                     </div>
                 </form>
